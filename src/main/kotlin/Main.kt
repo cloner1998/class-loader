@@ -13,6 +13,8 @@ fun main() {
     )
     val classToLoad = Class.forName("org.example.sampleClass.SajjadClass", true, child)
     val instance = classToLoad.newInstance()
+    val myMethod = classToLoad.getMethod("sajjadMethod")
+    println(myMethod.invoke(instance))
     println(instance.toString())
 
 }
