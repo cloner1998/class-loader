@@ -10,7 +10,7 @@ repositories {
 }
 
 dependencies {
-    implementation(":shared")
+    implementation(project(":shared"))
     testImplementation("org.jetbrains.kotlin:kotlin-test")
 }
 

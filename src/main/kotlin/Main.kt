@@ -10,9 +10,8 @@ fun main() {
         arrayOf(m1jar?.toURI()?.toURL() ?: throw Throwable("not found such a jar file"))
     )
     val classToLoad = Class.forName("org.example.sampleClass.SajjadClass", true, child)
-    val instance = classToLoad.newInstance()
+    val instance = classToLoad.getDeclaredConstructor().newInstance()
     val myMethod = classToLoad.getMethod("sajjadMethod")
     println(myMethod.invoke(instance))
     println(instance.toString())
-
 }
