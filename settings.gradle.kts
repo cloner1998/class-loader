@@ -3,3 +3,4 @@ plugins {
 }
 rootProject.name = "class-loader"
 include("m1")
+include("shared")
